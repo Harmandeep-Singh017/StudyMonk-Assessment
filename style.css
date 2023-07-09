@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #262b34;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid #fff;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+    /* width: 100%; */
+}
+
+.dropdown {
+    background-color: #262b34;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 38px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+        url(bg.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 89vh;
+    color: #fff;
+}
+
+.features {
+    display: inline;
+    border: 2px solid #262b34;
+}
+
+.call-to-action {
+    font-size: 24px;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+
+.button {
+    margin: 10px;
+    position: relative;
+    left: 80%;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #262b34;
+}
+
+.button:hover {
+    border-radius: 30px;
+    transition: all .5s ease-in-out ;
+    background-color: #262b34;
+    color: #fff;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    /* top: 79%; */
+    bottom: 0%;
+    overflow: hidden;
+}
+.cont {
+    width: 90px;
+    text-align: center;
+}
+
+.head {
+    padding-bottom: 5px;
+}
+
+.line {
+    height: 80px;
+    border-left: 2px solid #fff;
+    margin-left: 53px;
+}
+
+
+footer {
+    background-color: #262b34;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+
+/* LOGIN FORM */
+
+.register-login {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+}
+
+.form input {
+    text-align: center;
+    width: 70%;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 10px;
+    border: none;
+    color: #000;
+}
+
+.form button {
+    display: block;
+    color: #262b34;
+    padding: 10px;
+    width: 40%;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: none;
+}
+
+.form button:hover {
+    border-radius: 30px;
+    color: #fff;
+    background-color: #262b34;
+    transition: all .5s ease-in-out;
+}
+
+.goto a{
+    text-decoration: line-through;
+    color: #fff;
+}
+
+.goto a:hover {
+    text-decoration: none;
+    transition: all .5s ease-in;
+}
+
+
+/*Search Form */
+.search {
+    width: 58%;
+    height: 30%;
+    position: absolute;
+    left: 21%;
+    top: 40%;
+    text-align: center;
+}
+
+.search h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.search p {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.form-search {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 85%;
+    height: 50px;
+}
+.form-search input {
+    color: #000;
+    width: 45%;
+    text-align: center;
+    height: 50px;
+}
+
+.form-search button {
+    width: 69px;
+    height: 50px;
+    margin-left: -5px;
+    background-color: rgb(85 250 124);
+}
+
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #262b34;
+        right: 0;
+        left: 0;
+        margin-right: 0px;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #262b34;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type="checkbox"]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+}
+

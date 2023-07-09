@@ -1,0 +1,57 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <title>Recruitment Solution</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            StudyMonk</div>
+
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="services">
+                    <a href="#">Services</a>
+
+                    <ul class="dropdown">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">Interface Design</a></li>
+                        <li><a href="#">Consultancy</a></li>
+                        <li><a href="#">Training</a></li>
+                    </ul>
+                </li>
+                <li><a href="search.html">Search</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <div class="search">
+            <h1>Search, Apply and Work!</h1>
+            <p>Our Recruiters has helped thousand's of candidates find right job all across the India</p>
+            <section id="search-form">
+                <div class="form-search">
+                    <input type="text" id="jobRoleInput" placeholder="Job Role (Try Demo - Backend)">
+                    <input type="text" id="locationInput" placeholder="Location (Try Demo - (Pune))">
+                    <button onclick="searchCandidates()">Search</button>
+                </div>
+            </section>
+            <div id="candidateList"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
